@@ -1,7 +1,10 @@
+import Navbar from "./components/Navbar";
+
 export default function App() {
   return (
-    <div className="relative bg-amber-100">
-      <span className="text-3xl">Exemplo de texto</span>
+    <div className="">
+      <Navbar />
+      <div className="pt-22"></div>
     </div>
   );
 }
