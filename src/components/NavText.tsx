@@ -1,13 +1,22 @@
-import { type ButtonHTMLAttributes, type JSX, type ReactNode } from "react";
+import { type JSX, type ReactNode } from "react";
 
-type NavTextProps = ButtonHTMLAttributes<HTMLButtonElement> & {
+type NavTextProps = {
   children: ReactNode;
+  className?: string;
+  navigate: string;
 };
 
-export default function NavText({ children }: NavTextProps): JSX.Element {
+export default function NavText({
+  children,
+  className = "",
+  navigate,
+}: NavTextProps): JSX.Element {
   return (
-    <h2 className="text-slate-700 transition duration-150 hover:underline dark:text-slate-300">
+    <a
+      href={`${navigate}`}
+      className={`text-slate-700 transition duration-150 hover:underline dark:text-slate-300 ${className}`}
+    >
       {children}
-    </h2>
+    </a>
   );
 }
