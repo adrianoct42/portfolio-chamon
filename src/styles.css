@@ -1,7 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap");
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-body {
-  font-family: "Roboto Mono", sans-serif;
+@layer utilities {
+  .font-roboto-mono {
+    font-family: "Roboto Mono", monospace;
+  }
+  .font-montserrat {
+    font-family: "Montserrat", sans-serif;
+  }
+  .font-poppins {
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
 }

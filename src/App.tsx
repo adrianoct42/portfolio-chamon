@@ -7,7 +7,7 @@ import Skills from "./pages/Skills";
 
 export default function App() {
   return (
-    <div className="relative">
+    <div className="relative font-roboto-mono">
       <Navbar />
       <div className="pt-8">
         <Home />

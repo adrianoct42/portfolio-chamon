@@ -12,7 +12,7 @@ export default function Home() {
         </code>
         <H2Text>desenvolvedor front-end</H2Text>
         <button className="mt-4 border-2 p-2 text-2xl text-slate-900 transition duration-200 hover:border-slate-700 hover:bg-slate-700 hover:text-slate-300 dark:text-slate-400">
-          download CV
+          <a href="Curriculo - Adriano Chamon Tavares.pdf">download CV</a>
         </button>
         <div className="absolute bottom-24">
           <ScrollArrow />
