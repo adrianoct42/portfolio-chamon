@@ -18,3 +18,37 @@
 html {
   scroll-behavior: smooth;
 }
+
+.mySwiper .swiper-slide {
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.mySwiper .swiper-pagination {
+  bottom: 0 !important;
+  padding-bottom: 10px;
+}
+
+.custom-swiper-pagination .swiper-pagination-bullet {
+  background-color: #27272a;
+  opacity: 0.6;
+}
+
+.custom-swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #170bbd;
+  opacity: 1;
+}
+
+html.dark .custom-swiper-pagination .swiper-pagination-bullet {
+  background-color: #a1a1aa;
+  opacity: 0.6;
+}
+
+html.dark .custom-swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #0bbdbd;
+  opacity: 1;
+}

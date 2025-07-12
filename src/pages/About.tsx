@@ -41,7 +41,7 @@ export default function About() {
               {`};`}
             </code>
           </div>
-          <div className="m-4 font-poppins flex flex-col gap-2 items-center justify-center">
+          <div className="m-4 font-poppins flex flex-col gap-4 items-center justify-center">
             <H4Text>
               Prazer, me chamo Adriano e sou um desenvolvedor front-end. Me
               satisfaz um bom trabalho, estou sempre a procura de me aprimorar
