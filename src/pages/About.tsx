@@ -1,8 +1,11 @@
-import H4Text from "../components/H4Text";
+import { useTranslation } from "react-i18next";
+import SmallText from "../components/4_SmallText";
 
 export default function About() {
+  const { t } = useTranslation();
+
   return (
-    <div id="about" className="bg-slate-400 dark:bg-slate-900">
+    <div id="about" className="bg-slate-500 dark:bg-slate-900">
       <div className="flex h-screen flex-col items-center justify-center gap-4">
         <code className="text-3xl text-slate-900 dark:text-slate-400">
           {"<!-- about me -->"}
@@ -33,38 +36,19 @@ export default function About() {
               <span className="pl-4">
                 likes:{" "}
                 <span className="text-yellow-300">
-                  ["videogames", "anime", "volleyball", "cats", "coffee",
-                  "beer"]
+                  ["videogames", "anime", "psychology", "volleyball", "cats",
+                  "coffee", "beer"]
                 </span>
               </span>
               <br />
               {`};`}
             </code>
           </div>
-          <div className="m-4 font-poppins flex flex-col gap-4 items-center justify-center">
-            <H4Text>
-              Prazer, me chamo Adriano e sou um desenvolvedor front-end. Me
-              satisfaz um bom trabalho, estou sempre a procura de me aprimorar
-              no ramo da tecnologia, independente da stack!
-            </H4Text>
-            <H4Text>
-              Me graduei em Engenharia de Controle e Automação pela UFOP, mas
-              foi aproximadamente em 2020 que comecei a estudar software com
-              mais entusiasmo, me encontrando nessa área de fato por influência
-              principalmente de pessoas próximas.
-            </H4Text>
-            <H4Text>
-              Minhas oportunidades até o momento foram mais focadas no
-              front-end, principalmente com React e Flutter, onde sempre prezei
-              pela qualidade das minhas entregas, boa comunicação e aprendizado.
-              Estou, também, sempre interessado em abrangir meus conhecimentos
-              para além do front-end.
-            </H4Text>
-            <H4Text>
-              Um grande fã de jogos eletrônicos, animação como um todo, jazz,
-              meus gatos e um grande papo sobre a vida. Lembre-se, a resposta é
-              42. 🎒🌌🚀✨
-            </H4Text>
+          <div className="m-4 font-poppins flex flex-col gap-4 items-center justify-center text-start">
+            <SmallText>{t("aboutMe1")}</SmallText>
+            <SmallText>{t("aboutMe2")}</SmallText>
+            <SmallText>{t("aboutMe3")}</SmallText>
+            <SmallText>{t("aboutMe4")}</SmallText>
           </div>
         </div>
       </div>

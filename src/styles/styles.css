@@ -52,3 +52,23 @@ html.dark .custom-swiper-pagination .swiper-pagination-bullet-active {
   background-color: #0bbdbd;
   opacity: 1;
 }
+
+/*
+
+  Modelo atual de cores com possibilidade de alteração no futuro:
+
+  light: {
+    background: "bg-slate-500", // Background principal
+    accent: "bg-slate-300", // Variação parecida com background, use no ícone de light/dark e em lugares com um pequeno destaque do background, como os blocos de habilidades.
+    primary: "text-slate-900", Textos principais
+    secondary: "text-slate-700", Textos de suporte
+    text: "text-zinc-800", // texto do about me e semelhantes
+  },
+  dark: {
+    background: "bg-slate-900",
+    accent: "bg-slate-700",
+    primary: "text-slate-400",
+    secondary: "text-slate-300",
+    text: "text-zinc-400",
+  },
+*/

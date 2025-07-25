@@ -3,13 +3,13 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { projectData } from "../constants/projectsData";
-import H4Text from "../components/H4Text";
-import H3Text from "../components/H3Text";
-import H5Text from "../components/H5Text";
+import LargeText from "../components/4_SmallText";
+import StandardText from "../components/3_StandardText";
+import VerySmallText from "../components/5_VerySmallText";
 
 export default function Projects() {
   return (
-    <div id="projects" className="bg-slate-400 dark:bg-slate-900">
+    <div id="projects" className="bg-slate-500 dark:bg-slate-900">
       <div className="flex h-screen flex-col items-center justify-center gap-4">
         <code className="text-3xl text-slate-900 dark:text-slate-400">
           {"<!-- projects -->"}
@@ -46,17 +46,17 @@ export default function Projects() {
                     src={item.image}
                     alt={item.title}
                   />
-                  <div className="h-full bg-slate-300 px-4 pt-4 pb-4 rounded-b-2xl flex flex-col gap-2 dark:bg-slate-700">
-                    <H3Text>{item.title}</H3Text>
-                    <H4Text>{item.description}</H4Text>
+                  <div className="h-full bg-slate-400 px-4 pt-4 pb-4 rounded-b-2xl flex flex-col gap-2 dark:bg-slate-700">
+                    <StandardText>{item.title}</StandardText>
+                    <LargeText>{item.description}</LargeText>
                     <div className="flex gap-1 flex-wrap mt-auto">
                       {item.tags.map((tag, tagIndex) => (
-                        <H5Text
+                        <VerySmallText
                           key={tagIndex}
                           styles="py-0.5 px-2 font-bold border rounded-xl"
                         >
                           {tag}
-                        </H5Text>
+                        </VerySmallText>
                       ))}
                     </div>
                   </div>

@@ -25,7 +25,7 @@ export function DarkModeToggle() {
   return (
     <button
       onClick={() => setIsDark(!isDark)}
-      className="bg-blue rounded-full bg-slate-300 p-3 transition duration-150 dark:bg-slate-700"
+      className="bg-blue rounded-full bg-slate-400 p-3 transition duration-150 dark:bg-slate-700"
     >
       {isDark ? (
         <Sun size={20} color="white" />

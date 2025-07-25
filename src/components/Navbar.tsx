@@ -1,10 +1,11 @@
 import { DarkModeToggle } from "../contexts/DarkModeToggle";
+import { LanguageSelect } from "../contexts/LanguageSelect";
 import NavText from "./NavText";
 
 export default function Navbar() {
   return (
     <>
-      <nav className="fixed px-12 right-0 left-0 z-50 flex h-20 items-center justify-between bg-slate-400 py-5 dark:bg-slate-900">
+      <nav className="fixed px-12 right-0 left-0 z-100 flex h-16 py-5 items-center justify-between shadow-md bg-slate-500 dark:bg-slate-900">
         <NavText
           navigate="#home"
           className="text-slate-900 dark:text-slate-400"
@@ -17,6 +18,7 @@ export default function Navbar() {
           <NavText navigate="#skills">Habilidades</NavText>
           <NavText navigate="#contact">Contato</NavText>
           <DarkModeToggle />
+          <LanguageSelect />
         </div>
       </nav>
     </>
